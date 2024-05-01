@@ -1,0 +1,75 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  background-color: black !important;
+  color: white !important;
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.custom-card {
+  background-color: #003333 !important;
+  margin-bottom: 20px; /* Add some spacing between cards */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
+}
+
+.fade-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1, h2, h3, p, div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.custom-card:first-child {
+  margin-top: 20px;
+}
+
+.card-text {
+  padding-left: 0;
+}
+
+.card-text a {
+  padding-left: 0;
+}
+
+.link {
+  padding-left: 5px;
+}
+
+h1, h3 {
+  padding-top: 10px;
+}
+
+.navbar {
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
